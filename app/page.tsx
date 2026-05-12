@@ -352,17 +352,17 @@ export default function Home() {
   <div className="mt-3 space-y-2">
     <div className="flex items-center justify-between border-b border-white/20 pb-2">
       <span className="font-semibold">Hafta İçi</span>
-      <span className="font-black">09:00 - 22:00</span>
+      <span className="font-black">10:00 - 22:00</span>
     </div>
 
     <div className="flex items-center justify-between border-b border-white/20 pb-2">
       <span className="font-semibold">Cumartesi</span>
-      <span className="font-black">09:00 - 22:00</span>
+      <span className="font-black">10:00 - 22:00</span>
     </div>
 
     <div className="flex items-center justify-between rounded-xl bg-yellow-300 px-4 py-3 text-[#7a1f00] shadow-lg">
       <span className="font-black">Pazar</span>
-      <span className="font-black">AÇIĞIZ • 09:00 - 22:00</span>
+      <span className="font-black">AÇIĞIZ • 10:00 - 22:00</span>
     </div>
   </div>
 </div>
