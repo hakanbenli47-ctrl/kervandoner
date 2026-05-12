@@ -1,11 +1,17 @@
 import Image from "next/image";
 
-const phone = "905306657376";
-const displayPhone = "+90 530 665 73 76";
+const whatsappPhone = "905386257134";
+const callPhone1 = "905386226734";
+const callPhone2 = "905386257134";
+
+const displayWhatsapp = "0538 625 71 34";
+const displayCall1 = "0538 622 67 34";
+const displayCall2 = "0538 625 71 34";
+
 const address =
   "Cumhuriyet Mahallesi Demokrasi Caddesi No: 25/27A Çekmeköy";
 
-const whatsappOrder = `https://wa.me/${phone}?text=${encodeURIComponent(
+const whatsappOrder = `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(
   "Merhaba, Kervan Döner için sipariş vermek istiyorum."
 )}`;
 
@@ -14,29 +20,25 @@ const featuredProducts = [
     name: "Zurna Döner",
     desc: "Bol döner, sıcak lavaş, doyurucu porsiyon.",
     tag: "En sevilen",
-    image:
-      "https://images.unsplash.com/photo-1651988068312-9b7a4d7d94be?auto=format&fit=crop&w=900&q=80",
+    image: "/ilk.jpg",
   },
   {
     name: "Kaşarlı Zurna Döner",
     desc: "Eriyen kaşar lezzetiyle daha yoğun döner keyfi.",
     tag: "Bol lezzet",
-    image:
-      "https://images.unsplash.com/photo-1628191011224-522c74f82785?auto=format&fit=crop&w=900&q=80",
+    image: "/gorsel2.jpg",
   },
   {
     name: "Pilav Üstü Döner",
     desc: "Sıcak pilav üzerinde bol porsiyon döner.",
     tag: "Tabak lezzeti",
-    image:
-      "https://images.unsplash.com/photo-1625944230945-1b7dd3b949ab?auto=format&fit=crop&w=900&q=80",
+    image: "/gorsel3.jpg",
   },
   {
     name: "Dönerli Patso",
     desc: "Patates, döner ve soslarla hızlı doyuran seçenek.",
     tag: "Sokak lezzeti",
-    image:
-      "https://images.unsplash.com/photo-1612392062631-94dd858cba88?auto=format&fit=crop&w=900&q=80",
+    image: "/gorsel4.jpg",
   },
 ];
 
@@ -70,7 +72,7 @@ const advantages = [
   "Sıcak servis",
   "Doyurucu porsiyon",
   "Hızlı sipariş",
-  "Merkezi konum",
+  "Hafta sonu açığız",
 ];
 
 export default function Home() {
@@ -103,7 +105,7 @@ export default function Home() {
           </div>
 
           <a
-            href={`tel:+${phone}`}
+            href={`tel:+${callPhone1}`}
             className="rounded-full bg-red-600 px-4 py-3 text-xs font-black text-white shadow-lg shadow-red-200 transition hover:scale-105 sm:px-6 sm:text-sm"
           >
             Ara
@@ -113,7 +115,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 py-12 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
           <div>
             <p className="mb-4 inline-flex rounded-full bg-red-100 px-4 py-2 text-xs font-black text-red-700 sm:text-sm">
-              Günlük sıcak döner • Patso • Köfte • Çorba
+              Günlük sıcak döner • Patso • Köfte • Çorba • Hafta sonu açığız
             </p>
 
             <h2 className="max-w-3xl text-[2.55rem] font-black leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
@@ -127,7 +129,8 @@ export default function Home() {
             <p className="mt-6 max-w-2xl text-base font-semibold leading-8 text-[#6b3410] sm:text-lg">
               Kervan Döner’de zurna dönerden pilav üstüne, patso çeşitlerinden
               köfte ve çorbaya kadar hızlı, sıcak ve iştah açıcı seçenekler
-              seni bekliyor.
+              seni bekliyor. Hafta sonu da açık yapımızla sipariş ve servis için
+              ulaşabilirsiniz.
             </p>
 
             <div className="mt-8 grid gap-3 sm:flex">
@@ -163,7 +166,7 @@ export default function Home() {
             <div className="absolute inset-4 rounded-[3rem] bg-orange-300 blur-3xl opacity-50" />
             <div className="relative overflow-hidden rounded-[2.2rem] bg-white p-3 shadow-2xl shadow-orange-200 sm:rounded-[3rem]">
               <Image
-                src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80"
+                src="/ilk.jpg"
                 alt="Kervan Döner sıcak servis"
                 width={1000}
                 height={750}
@@ -172,13 +175,15 @@ export default function Home() {
               />
 
               <div className="absolute left-5 top-5 rounded-2xl bg-white/90 px-4 py-3 shadow-xl backdrop-blur">
-                <p className="text-xs font-black text-red-600">Bugünün öne çıkanı</p>
+                <p className="text-xs font-black text-red-600">
+                  Bugünün öne çıkanı
+                </p>
                 <p className="text-lg font-black">Kaşarlı Zurna Döner</p>
               </div>
 
               <div className="absolute bottom-5 left-5 right-5 rounded-3xl bg-white/92 p-5 shadow-xl backdrop-blur">
                 <p className="text-sm font-black text-red-600">
-                  Sıcak servis, bol porsiyon
+                  Hafta sonu da açığız
                 </p>
                 <h3 className="mt-1 text-2xl font-black">Kervan usulü döner</h3>
                 <p className="mt-1 text-sm font-semibold text-[#7a3a10]">
@@ -197,7 +202,8 @@ export default function Home() {
             </div>
             <p className="text-sm font-semibold leading-6 text-[#7a3a10] sm:col-span-2">
               Döner, patso, köfte, sucuk, çorba ve içecek seçenekleriyle
-              pratik, sıcak ve doyurucu bir menü sunuyoruz.
+              pratik, sıcak ve doyurucu bir menü sunuyoruz. Hafta sonu da
+              sipariş için ulaşabilirsiniz.
             </p>
           </div>
         </div>
@@ -215,8 +221,7 @@ export default function Home() {
               </h3>
             </div>
             <p className="max-w-md text-sm font-semibold leading-6 text-[#7a3a10]">
-              Görsel, açıklama ve sipariş çağrısıyla menüyü daha güçlü gösteren
-              kart yapısı.
+             
             </p>
           </div>
 
@@ -300,7 +305,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="iletisim" className="px-4 py-14 pb-28 sm:px-8 lg:px-20 lg:pb-16">
+      <section
+        id="iletisim"
+        className="px-4 py-14 pb-28 sm:px-8 lg:px-20 lg:pb-16"
+      >
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="rounded-[2.2rem] bg-gradient-to-br from-red-600 to-orange-500 p-6 text-white shadow-2xl shadow-orange-200 sm:p-8">
             <p className="text-sm font-black uppercase tracking-[0.3em] text-yellow-100">
@@ -310,11 +318,54 @@ export default function Home() {
 
             <div className="mt-8 space-y-5">
               <div className="rounded-2xl bg-white/15 p-5 backdrop-blur">
-                <p className="text-sm font-bold text-yellow-100">Telefon</p>
-                <a href={`tel:+${phone}`} className="mt-1 block text-2xl font-black">
-                  {displayPhone}
+                <p className="text-sm font-bold text-yellow-100">WhatsApp Sipariş</p>
+                <a
+                  href={whatsappOrder}
+                  target="_blank"
+                  className="mt-1 block text-2xl font-black"
+                >
+                  {displayWhatsapp}
                 </a>
               </div>
+
+              <div className="rounded-2xl bg-white/15 p-5 backdrop-blur">
+                <p className="text-sm font-bold text-yellow-100">Telefon</p>
+                <div className="mt-2 space-y-2">
+                  <a
+                    href={`tel:+${callPhone1}`}
+                    className="block text-2xl font-black"
+                  >
+                    {displayCall1}
+                  </a>
+                  <a
+                    href={`tel:+${callPhone2}`}
+                    className="block text-2xl font-black"
+                  >
+                    {displayCall2}
+                  </a>
+                </div>
+              </div>
+
+              <div className="rounded-2xl bg-white/15 p-5 backdrop-blur">
+  <p className="text-sm font-bold text-yellow-100">Çalışma Saatleri</p>
+
+  <div className="mt-3 space-y-2">
+    <div className="flex items-center justify-between border-b border-white/20 pb-2">
+      <span className="font-semibold">Hafta İçi</span>
+      <span className="font-black">09:00 - 22:00</span>
+    </div>
+
+    <div className="flex items-center justify-between border-b border-white/20 pb-2">
+      <span className="font-semibold">Cumartesi</span>
+      <span className="font-black">09:00 - 22:00</span>
+    </div>
+
+    <div className="flex items-center justify-between rounded-xl bg-yellow-300 px-4 py-3 text-[#7a1f00] shadow-lg">
+      <span className="font-black">Pazar</span>
+      <span className="font-black">AÇIĞIZ • 09:00 - 22:00</span>
+    </div>
+  </div>
+</div>
 
               <div className="rounded-2xl bg-white/15 p-5 backdrop-blur">
                 <p className="text-sm font-bold text-yellow-100">Adres</p>
@@ -361,7 +412,7 @@ export default function Home() {
 
       <div className="fixed bottom-0 left-0 right-0 z-50 grid grid-cols-2 gap-2 bg-white/95 p-3 shadow-2xl backdrop-blur lg:hidden">
         <a
-          href={`tel:+${phone}`}
+          href={`tel:+${callPhone1}`}
           className="rounded-2xl bg-red-600 py-4 text-center text-sm font-black text-white"
         >
           Ara
