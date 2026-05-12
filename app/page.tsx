@@ -178,7 +178,7 @@ export default function Home() {
                 <p className="text-xs font-black text-red-600">
                   Bugünün öne çıkanı
                 </p>
-                <p className="text-lg font-black">Kaşarlı Zurna Döner</p>
+                <p className="text-lg font-black"> Zurna Döner</p>
               </div>
 
               <div className="absolute bottom-5 left-5 right-5 rounded-3xl bg-white/92 p-5 shadow-xl backdrop-blur">
