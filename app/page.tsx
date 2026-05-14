@@ -63,8 +63,20 @@ const menuGroups = [
     items: ["Köfte", "Sucuk", "Çorba"],
   },
   {
-    title: "Yan Lezzetler",
-    items: ["İçecekler"],
+    title: "İçecekler",
+    items: [
+      "Kola",
+      "Kola Turka",
+      "Pepsi",
+      "Fanta",
+      "Lipton Şeftali",
+      "Fuse Tea Şeftali",
+      "Şalgam",
+      "Acılı Şalgam",
+      "Ayran",
+      "Acılı Ayran",
+      "Ekşi Ayran",
+    ],
   },
 ];
 
